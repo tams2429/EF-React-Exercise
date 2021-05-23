@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
 
-const Button = ({data}) => {
+const Button = ({data, handleClick, btnText}) => {
+
+  // const [btnText, setbtnText] = React.useState(data.buttonLabelHide)
   console.log(data)
-  return <>This is the Button component. Please use the button to hide/show the cards. <a className={"btn"} href={"/"}>{data.buttonLabelHide}</a></>
+  return <><button className={"btn"} onClick={handleClick}>{btnText}</button></>
 }
 
 export default Button;

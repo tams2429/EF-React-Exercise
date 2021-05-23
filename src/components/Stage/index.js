@@ -8,8 +8,10 @@ const Stage = ({data}) => {
     <div className="stage-wrapper" style={{
       backgroundImage: `url(${data.image})`
     }}>
-      <h1>{data.siteTitle}</h1>
-      <h4>{data.siteSubTitle}</h4>
+      <div className="stage-container">
+        <h1>{data.siteTitle}</h1>
+        <h4>{data.siteSubTitle}</h4>
+      </div>
     </div>
   )
   // <> This is the Stage component</>

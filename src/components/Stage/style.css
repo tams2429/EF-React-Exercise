@@ -1,4 +1,41 @@
 .stage-wrapper {
   color: white;
-  height: 25%;
+  height: 31vh;
+  position: relative;
+  background-size: cover;
+}
+
+.stage-container {
+  margin-left: 17.4%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.stage-container>h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stage-container>h4 {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 650px) {
+  .stage-container>h1 {
+    font-size: 18px;
+  }
+
+  .stage-container>h4 {
+    font-size: 10.5px;
+  }
+
+  .stage-wrapper {
+    height: 18vh;
+  }
+
+  .stage-container {
+    margin-left: 3%;
+  }
 }
