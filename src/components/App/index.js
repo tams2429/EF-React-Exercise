@@ -7,30 +7,25 @@ import './style.css';
 
 const App = () => {
 
+  const {components} = data.page
+
   const [showCards, setshowCards] = React.useState(true)
-  const [btnText, setbtnText] = React.useState(data.page.components[2].buttonLabelHide)
+  const [btnText, setbtnText] = React.useState(components[2].buttonLabelHide)
 
   const handleClick = () => {
-    console.log('Clicked')
-
-    if (btnText === data.page.components[2].buttonLabelHide) {
-      setbtnText(data.page.components[2].buttonLabelShow)
+    if (btnText === components[2].buttonLabelHide) {
+      setbtnText(components[2].buttonLabelShow)
     } else {
-      setbtnText(data.page.components[2].buttonLabelHide)
+      setbtnText(components[2].buttonLabelHide)
     }
-
     setshowCards(!showCards)
-
   }
 
-  // console.log(data)
-  // console.log(showCards)
-  // console.log(btnText)
   return (
     <div className="container">
-      <Stage data={data.page.components[0]} />
-      <Cards data={data.page.components[1]} showCards={showCards}/>
-      <Button data={data.page.components[2]} handleClick={handleClick} btnText={btnText}/>
+      <Stage data={components[0]} />
+      <Cards data={components[1]} showCards={showCards}/>
+      <Button handleClick={handleClick} btnText={btnText}/>
     </div>
   );
 }

@@ -2,8 +2,7 @@ import React from 'react';
 import './style.css';
 
 const Cards = ({data, showCards}) => {
-  console.log(data)
-  console.log(showCards)
+
   const renderCards = () => {
     return (
       data.cards.map((card,index) => {

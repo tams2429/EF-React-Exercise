@@ -2,8 +2,6 @@ import React from 'react';
 import './style.css';
 
 const Stage = ({data}) => {
-  console.log(data)
-
   return (
     <div className="stage-wrapper" style={{
       backgroundImage: `url(${data.image})`
@@ -14,7 +12,6 @@ const Stage = ({data}) => {
       </div>
     </div>
   )
-  // <> This is the Stage component</>
 }
 
 export default Stage;

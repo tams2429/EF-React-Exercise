@@ -6,7 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
-
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -61,9 +60,7 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  /* width: 960px; */
   margin: auto;
-  /* padding: 24px 0px; */
   display: flex;
   flex-direction: column;
   width: 100%;
